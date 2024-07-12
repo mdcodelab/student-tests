@@ -67,3 +67,10 @@
       @apply bg-background text-foreground;
     }
   }
+
+  .background-div {
+    background-image: url("../public/images/image.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
