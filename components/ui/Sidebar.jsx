@@ -13,7 +13,7 @@ function Sidebar() {
 
   return (
     <aside className="h-full bg-muted">
-      <h1 className="text-center py-10 font-semibold text-2xl">Management financiar</h1>
+      <h1 className="text-center pb-10 pt-4 font-semibold text-2xl">Management financiar</h1>
       <Image src="/images/image.avif" alt="photo" width={200} height={200} className="mx-auto rounded"/>
       <div className="flex flex-col py-4 gap-y-10 pt-10">
         <Button
@@ -22,7 +22,7 @@ function Sidebar() {
         >
           <Link
             href="/profile/test"
-            className="flex items-center gap-x-2 text-lg"
+            className="flex items-center gap-x-2 text-xl"
           >
             <FaRegNoteSticky /> Test
           </Link>
@@ -33,7 +33,7 @@ function Sidebar() {
         >
           <Link
             href="/profile/results"
-            className="flex items-center gap-x-2 text-lg"
+            className="flex items-center gap-x-2 text-xl"
           >
             <LuGoal /> Rezultate
           </Link>
@@ -44,9 +44,9 @@ function Sidebar() {
         >
           <Link
             href="/profile/students"
-            className="flex items-center gap-x-2 text-lg"
+            className="flex items-center gap-x-2 text-xl"
           >
-            <PiStudent /> Studenti
+            <PiStudent/> Studenti
           </Link>
         </Button>
       </div>
