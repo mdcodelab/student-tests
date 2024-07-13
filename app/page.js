@@ -5,7 +5,7 @@ import Link from "next/link";
 function HomePage() {
   return (
     <div className="h-screen w-screen flex justify-center items-center background-div">
-      <div className="max-w-50 auto bg-slate-400 p-4 rounded">
+      <div className="max-w-50 auto bg-slate-400 p-4">
         <h1 className="text-center text-2xl font-semibold pb-6 tracking-wide">
           Test
         </h1>
