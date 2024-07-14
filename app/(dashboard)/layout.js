@@ -1,5 +1,7 @@
 import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
+import GuestPage from "../page";
+import { currentUser } from "@clerk/nextjs/server";
 
 function Layout({ children }) {
   return (
