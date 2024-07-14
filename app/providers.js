@@ -1,9 +1,25 @@
 "use client";
-import { ThemeProvider } from "@/components/ui/ThemeProvider";
 
-function providers({children}) {
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { Toaster } from "react-hot-toast";
+import { useState } from "react";
+import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+
+function Providers({ children }) {
+  const [queryClient] = useState(
+    () =>
+      new QueryClient({
+        defaultOptions: {
+          queries: {
+            staleTime: 60 * 1000,
+          },
+        },
+      })
+  );
+
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       <ThemeProvider
         attribute="class"
         defaultTheme="system"
@@ -11,10 +27,11 @@ function providers({children}) {
         disableTransitionOnChange
       >
         {children}
+        <Toaster position="top-center" />
       </ThemeProvider>
-    </>
+      <ReactQueryDevtools initialIsOpen={false} />
+    </QueryClientProvider>
   );
 }
 
-export default providers;
-
+export default Providers;

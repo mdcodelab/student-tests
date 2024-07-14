@@ -1,11 +1,17 @@
+import Test from "../../../../components/Test";
+import {
+  dehydrate,
+  HydrationBoundary,
+  QueryClient,
+} from "@tanstack/react-query";
 
-
-function page() {
+function TestPage() {
+  const queryClient = new QueryClient();
   return (
-    <div>
-      Test page
-    </div>
-  )
+    <HydrationBoundary state={dehydrate(queryClient)}>
+      <Test></Test>
+    </HydrationBoundary>
+  );
 }
 
-export default page
+export default TestPage;

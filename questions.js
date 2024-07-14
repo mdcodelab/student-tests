@@ -144,5 +144,5 @@ answers: ["Considerarea proiectului cu RIR mai mare.", "Considerarea proiectului
     answers: ["Cresterea profitului.", "Cresterea cifrei de afaceri.", "Cresterea investitiilor."] }
 ];
 
-const correctAnswers = [
+export const correctAnswers = [
 2, 2, 0, 1, 1, 1, 0, 2, 0, 1, 2, 1, 0, 2, 1, 2, 0, 0, 1, 2, 1, 0, 2, 1, 0, 0, 2, 1, 0, 0]

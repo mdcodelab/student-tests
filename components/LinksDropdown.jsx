@@ -1,6 +1,6 @@
 import {
   DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem} from "@/components/ui/dropdown-menu";
-import { Button } from "./button";
+import { Button } from "./ui/button";
 import { AlignLeft } from "lucide-react";
 import Link from "next/link";
 import { FaRegNoteSticky } from "react-icons/fa6";

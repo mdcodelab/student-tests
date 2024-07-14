@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { Button } from "./button";
+import { Button } from "./ui/button";
 import { FaRegNoteSticky } from "react-icons/fa6";
 import { LuGoal } from "react-icons/lu";
 import { PiStudent } from "react-icons/pi";
