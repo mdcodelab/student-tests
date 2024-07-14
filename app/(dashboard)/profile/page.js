@@ -12,7 +12,7 @@ function ProfilePage() {
         </p>
 
         <p>
-          Fiecare raspuns corect este notat cu 0,4 puncte. Se acorda un punct
+          Fiecare raspuns corect este notat cu 0,3 puncte. Se acorda un punct
           din oficiu.
         </p>
         <p>Timpul de lucru este de 2 ore.</p>
