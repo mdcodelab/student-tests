@@ -1,13 +1,14 @@
 
 import {
-  DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem} from "@/components/ui/dropdown-menu";
-import { Button } from "./ui/button";
+  DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, 
+  DropdownMenuItem} from "../../components/ui/dropdown-menu";
+import { Button } from "../../components/ui/button";
 import { AlignLeft } from "lucide-react";
 import Link from "next/link";
 import { FaRegNoteSticky } from "react-icons/fa6";
 import { LuGoal } from "react-icons/lu";
 import { PiStudent } from "react-icons/pi";
-import { getUser } from "@/practicals/getUser";
+import { getUser } from "../../practicals/getUser";
 
 async function LinksDropdown() {
   const user= await getUser();

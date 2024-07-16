@@ -1,6 +1,6 @@
 "use client";
 
-import { ThemeProvider } from "@/components/ThemeProvider";
+import { ThemeProvider } from "../app/components/ThemeProvider";
 import { Toaster } from "react-hot-toast";
 import { useState } from "react";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";

@@ -21,7 +21,7 @@ async function ProfilePage() {
         <p>Timpul de lucru este de 2 ore.</p>
         <p className="text-center pt-6">Succes! &#128522;</p>
         <Button className="w-50 mt-6 mx-auto text-xl">
-          <Loader2 className="mr-2 animate-spin" /> Incepe testul</Button>
+          <Loader2 className="mr-2 animate-spin" /> <Link href="/profile/test">Incepe Testul</Link></Button>
       </div>
     </div>
   );

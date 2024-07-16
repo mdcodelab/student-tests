@@ -16,10 +16,11 @@ function HomePage() {
         <h1 className="text-center text-2xl font-semibold pb-8 tracking-wide">
           Management Financiar
         </h1>
-        <Button className="w-50 mt-6 ml-16 text-xl">
-          <Loader2 className="mr-2 animate-spin" />
-          <Link href="/profile"><SignInButton/></Link>
-        </Button>
+        <Link href="/profile" className="w-50 ml-20 mt-6 relative p-2 rounded text-xl border border-black">
+          <Button >
+            <SignInButton />
+          </Button>
+        </Link>
       </div>
     </div>
   );
